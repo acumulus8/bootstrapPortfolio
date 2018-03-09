@@ -30,7 +30,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Skills</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -48,40 +48,45 @@
         </header>
 
         <main>
-            <section>
+            <section id="jumbotron">
                 <div class="jumbotron">
-                    <div class="container">
-                        <h1>Tim Wilburn</h1>
-                        <p>Web designer with a passion for creating beautiful, responsive, websites.</p>
-                        <br />
-                        <p>
-                            <a class="btn btn-primary btn-lg" href="#" role="button">
-                               Learn More
-                            </a>
-                        </p>
+                    <div id="jumbo-container" class="container">
+                        <div class="image image-responsive">
+                            <img id="jumbo-img" src="./resources/images/workspace.jpg" alt="a web developer's workspace" />
+                        </div>
+                        <div class="jumbo-text">
+                            <h1>Tim Wilburn</h1>
+                            <p id="jumbotron-text">Web designer with a passion for creating beautiful, responsive, websites.</p>
+                            <br />
+                            <p>
+                                <a class="btn btn-primary btn-lg" href="#" role="button">
+                                Learn More
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section id="tech-skills">
                 <div class="fuid-container">
                     <h1 class="text-center sect-title">Technical Skills</h1>
-                    <div class="row">
-                        <div class="col-sm-4 text-center">
+                    <div id="skills" class="row">
+                        <div id="skill" class="col-sm-4 text-center">
                             <span aria-hidden="true" class="fa fa-photo fa-5x"></span>
                             <h3>Frontend</h3>
                             <p>Bootstrap</p>
                             <p>Sass</p>
                             <p>CSS3</p>
                         </div>
-                        <div class="col-sm-4 text-center">
+                        <div id="skill" class="col-sm-4 text-center">
                             <span aria-hidden="true" class="fa fa-cog fa-5x"></span>
                             <h3>Backend</h3>
                             <p>SQL</p>
                             <p>MongoDB</p>
                             <p>Express.js</p>
                         </div>
-                        <div class="col-sm-4 text-center">
+                        <div id="skill" class="col-sm-4 text-center">
                             <span aria-hidden="true" class="fa fa-pencil fa-5x"></span>
                             <h3>Design</h3>
                             <p>Photoshop</p>
@@ -89,13 +94,18 @@
                             <p>InDesign</p>
                         </div>
                     </div>
+                    <p id="skills-learn-more" class="text-center">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">
+                        Learn More
+                        </a>
+                    </p>
                 </div>
             </section>
 
-            <section>
+            <section id="portfolio">
                 <div class="container-fluid">
                     <h1 class="text-center sect-title">Portfolio</h1>
-                    <div class="row">
+                    <div id="portfolio-pics" class="row">
                         <div class="col-sm-4">
                             <img class="img-responsive" src="resources/images/pexels-photo-326424.jpeg">
                             <h4 class="text-center"><a href="#">Dasmoto</a></h4>
@@ -126,10 +136,10 @@
                 </div>
             </section>
 
-            <section>
+            <section id="contact">
                 <div class="container-fluid">
                     <h1 class="text-center sect-title">Contact</h1>
-                    <div class="row">
+                    <div id="icons" class="row">
                         <div class="col-sm-6 col-md-3">
                             <div class="contact text-center">
                                 <a href="#" >
@@ -139,7 +149,7 @@
                         </div>
                         <div class="col-sm-6 col-md-3">
                             <div class="contact text-center">
-                                <a href="#" >
+                                <a href="https://github.com/acumulus8" target="_blank" >
                                     <span aria-hidden="true" class="fa fa-github fa-5x text-center"></span>
                                 </a>
                             </div>
@@ -163,8 +173,8 @@
             </section>
         </main>
 
-        <footer>
-            <footer class="text-right">Copyright &copy; 2018 Tim Wilburn. All rights reserved.</footer>
+        <footer class="text-right">
+            Copyright &copy; 2018 Tim Wilburn. All rights reserved.
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
