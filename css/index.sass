@@ -1,78 +1,75 @@
-header {
-    width: 100%;
-}
+@mixin section-heading
+    font:
+        family: sans-serif
+        size: 4rem
+        weight: bold
 
-header span, header a, header ul {
-    color: white;
-}
+main 
+    position: relative
 
-main {
-    position: relative;
-}
+    #jumbo-container 
+        width: 100%
+        display: flex
+        justify-content: space-between
 
-#jumbo-container {
-    display: flex;
-    justify-content: space-between;
-}
+        .image-container
+            width: 50%
 
-.image {
-    width: 50%;
-}
+            #jumbo-img
+                width: 100%
+                clip-path: polygon(0% 0%, 98% 5%, 91% 96%, 5% 100%)
+                padding-top: 2%
 
-#jumbo-img {
-    width: 100%;
-    clip-path: polygon(0% 0%, 98% 5%, 91% 96%, 5% 100%);
-    padding-top: 5%;
-}
+        .jumbo-text 
+            width: 40%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            border-left: 4px solid rgba(15, 165, 157, 0.863)
+            padding: 5%
 
-.jumbo-text {
-    width: 40%;
-    text-align: center;
-    border-left: 4px solid rgba(15, 165, 157, 0.863)
-}
+            #jumbotron-p 
+                font-size: 3rem
 
-#jumbotron-text {
-    font-size: 3rem;
-}
+    #tech-skills 
+        padding: 3rem 0
 
-#tech-skills {
-    padding: 3rem 0;
-}
+        h1
+            @include section-heading
 
-#skills {
-    margin-top: 3.5rem;
-    margin-right: 0px;
-}
+        #skills
+            margin-top: 3.5rem
+            margin-right: 0px
 
-#skill {
-    padding-right: 0;
-}
+            #skill 
+                padding-right: 0
 
-#skills-learn-more {
-    margin-top: 6rem;
-}
+        #skills-learn-more 
+            margin-top: 6rem
 
-#portfolio {
-    margin-top: 1rem;
-}
+    #portfolio 
+        margin-top: 1rem
 
-#portfolio-pics {
-    margin-top: 3.5rem;
-}
+        h1
+            @include section-heading
 
-#contact {
-    margin-top: 3.5rem;
-    margin-bottom: 4rem;
-}
+        #portfolio-pics 
+            margin-top: 3.5rem
 
-#icons {
-    margin-top: 3.5rem;
-}
+    #contact
+        margin-top: 3.5rem
+        margin-bottom: 4rem
 
-footer {
-    position: relative;
-    height: 4rem;
-    align-items: center;
-    color: white;
-    background-color: black;
-}
+        h1
+            @include section-heading
+
+        #icons 
+            margin-top: 3.5rem
+
+footer 
+    position: relative
+    height: 4rem
+    align-items: center
+    color: white
+    background-color: black

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width" name="viewport">
         <title>Tim Wilburn: Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/reset.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./css/main.css" /> 
@@ -51,16 +51,16 @@
             <section id="jumbotron">
                 <div class="jumbotron">
                     <div id="jumbo-container" class="container">
-                        <div class="image image-responsive">
+                        <div class="image-container image-responsive">
                             <img id="jumbo-img" src="./resources/images/workspace.jpg" alt="a web developer's workspace" />
                         </div>
                         <div class="jumbo-text">
                             <h1>Tim Wilburn</h1>
-                            <p id="jumbotron-text">Web designer with a passion for creating beautiful, responsive, websites.</p>
+                            <p id="jumbotron-p">Web designer with a passion for creating beautiful, responsive, websites.</p>
                             <br />
                             <p>
                                 <a class="btn btn-primary btn-lg" href="#" role="button">
-                                Learn More
+                                    Learn More
                                 </a>
                             </p>
                         </div>
@@ -70,7 +70,7 @@
 
             <section id="tech-skills">
                 <div class="fuid-container">
-                    <h1 class="text-center sect-title">Technical Skills</h1>
+                    <h1 class="text-center">Technical Skills</h1>
                     <div id="skills" class="row">
                         <div id="skill" class="col-sm-4 text-center">
                             <span aria-hidden="true" class="fa fa-photo fa-5x"></span>
@@ -83,14 +83,12 @@
                             <span aria-hidden="true" class="fa fa-cog fa-5x"></span>
                             <h3>Backend</h3>
                             <p>SQL</p>
-                            <p>MongoDB</p>
-                            <p>Express.js</p>
                         </div>
                         <div id="skill" class="col-sm-4 text-center">
                             <span aria-hidden="true" class="fa fa-pencil fa-5x"></span>
                             <h3>Design</h3>
-                            <p>Photoshop</p>
-                            <p>Illustrator</p>
+                            <p>Adobe XD</p>
+                            <p>Adobe Illustrator</p>
                             <p>InDesign</p>
                         </div>
                     </div>
@@ -107,8 +105,10 @@
                     <h1 class="text-center sect-title">Portfolio</h1>
                     <div id="portfolio-pics" class="row">
                         <div class="col-sm-4">
-                            <img class="img-responsive" src="resources/images/pexels-photo-326424.jpeg">
-                            <h4 class="text-center"><a href="#">Dasmoto</a></h4>
+                            <a href="#">
+                                <img class="img-responsive" src="resources/images/Colmar.png">
+                            </a>
+                            <h4 class="text-center"><a href="#">Colmar Academy</a></h4>
                         </div>
                         <div class="col-sm-4">
                             <img class="img-responsive" src="resources/images/pexels-photo-326424.jpeg">
