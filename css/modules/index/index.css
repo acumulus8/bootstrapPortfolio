@@ -51,49 +51,23 @@ main {
       line-height: 3.4rem; } }
   main #tech-skills {
     padding: 3rem 0; }
-    main #tech-skills #skills {
-      margin-top: 3.5rem;
-      margin-right: 0px;
-      padding-left: 2rem; }
-      main #tech-skills #skills .skills-img {
-        max-width: 40%; }
-      main #tech-skills #skills img {
-        width: 100%;
-        height: auto; }
-      main #tech-skills #skills h1 {
+    main #tech-skills .skills-img {
+      background-image: url("../../resources/images/workspace.jpg");
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      max-width: 50%; }
+      main #tech-skills .skills-img h1 {
         font-family: sans-serif;
         font-size: 4rem;
-        font-weight: bold;
-        margin: 0 auto;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        color: white;
-        width: 100%; }
-      main #tech-skills #skills .skills-description {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative;
-        -webkit-transform: translateY(40%);
-        -ms-transform: translateY(40%);
-        transform: translateY(40%); }
-        main #tech-skills #skills .skills-description p {
-          line-height: 3.5rem; }
+        font-weight: bold; }
+    main #tech-skills #skills {
+      margin-top: 3.5rem;
+      margin-right: 0px; }
+      main #tech-skills #skills #skill {
+        padding-right: 0; }
     main #tech-skills #skills-learn-more {
-      margin-top: 2.5rem; }
+      margin-top: 1.5rem; }
   main #portfolio {
     margin-top: 3rem;
     max-width: 100%; }
