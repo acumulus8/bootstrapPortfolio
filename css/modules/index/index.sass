@@ -1,8 +1,12 @@
+@mixin textShadow
+    text-shadow: 1px 1px darkgrey
+    
 @mixin section-heading
     font:
         family: sans-serif
         size: 4rem
         weight: bold
+
 
 main 
     position: relative
@@ -17,8 +21,7 @@ main
 
             #jumbo-img
                 width: 100%
-                clip-path: polygon(0% 0%, 98% 5%, 91% 96%, 5% 100%)
-                padding-top: 2%
+                height: 100%
 
         .jumbo-text 
             width: 40%
@@ -26,11 +29,35 @@ main
             flex-direction: column
             justify-content: center
             text-align: center
-            border-left: 4px solid rgba(15, 165, 157, 0.863)
+            border-right: 4px solid rgba(15, 165, 157, 0.863)
             padding: 5%
+
+            h1 
+                @include textShadow
 
             #jumbotron-p 
                 font-size: 3rem
+                @include textShadow
+
+    @media only screen and (max-width: 768px)
+        #jumbo-container
+            flex-direction: column
+        
+            .image-container
+                width: 100%
+
+            .jumbo-text
+                width: 100%
+                border-right: none
+                border-bottom: 4px solid rgba(15, 165, 157, 0.863)
+
+    @media only screen and (max-width: 450px)
+        .jumbo-text
+            #jumbotron-p 
+                font-size: .5rem
+                line-height: 3.4rem
+                
+
 
     #tech-skills 
         padding: 3rem 0
@@ -46,16 +73,26 @@ main
                 padding-right: 0
 
         #skills-learn-more 
-            margin-top: 6rem
+            margin-top: 1.5rem
+
 
     #portfolio 
-        margin-top: 1rem
+        margin-top: 3rem
+        max-width: 100%
 
         h1
             @include section-heading
 
-        #portfolio-pics 
+        .portfolio-pics 
             margin-top: 3.5rem
+
+            img
+                max-width: 100%
+                transition: 0.4s
+                &:hover
+                    box-shadow: 6px 8px 6px darkgrey
+                margin-bottom: 3rem
+
 
     #contact
         margin-top: 3.5rem
@@ -67,9 +104,13 @@ main
         #icons 
             margin-top: 3.5rem
 
+
 footer 
     position: relative
-    height: 4rem
+    height: 8rem
     align-items: center
     color: white
     background-color: black
+    display: flex
+    align-items: center
+    padding-left: 2rem

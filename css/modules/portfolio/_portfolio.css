@@ -1,0 +1,24 @@
+.port-heading {
+  font-size: 8rem;
+  margin: 10% 0 10% 10%; }
+
+.image-container {
+  width: 25%;
+  margin: 0 5% 8% 15%; }
+  .image-container img {
+    width: 100%;
+    height: auto; }
+
+footer {
+  position: relative;
+  height: 8rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem; }
