@@ -4,10 +4,20 @@
 
 .image-container {
   width: 25%;
-  margin: 0 5% 8% 15%; }
+  margin: 0 5% 8% 10%; }
   .image-container img {
     width: 100%;
     height: auto; }
+
+.project {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .project__text {
+    width: 50%; }
+  .project--heading {
+    margin-top: 0; }
 
 footer {
   position: relative;
