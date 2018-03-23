@@ -18,8 +18,36 @@
     &__text
         width: 50%
 
-    &--heading
-        margin-top: 0
+    &__heading
+        margin: 0
+
+    h4
+        margin-top: 1rem
+
+    &__link
+        margin-right: 30px
+
+        a:hover
+            color: pink
+        
+        a:active
+            color: blue
+        
+
+@media only screen and (max-width: 900px)
+    .image-container
+        width: 50%
+        margin: 0 5% 2% 10%
+        border: 2px solid black
+
+    .project
+        flex-direction: column
+        margin-bottom: 8rem
+
+        &__text
+            margin-left: 10%
+            width: 80%
+
 
 footer 
     position: relative

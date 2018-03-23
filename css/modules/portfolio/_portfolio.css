@@ -16,8 +16,31 @@
   display: flex; }
   .project__text {
     width: 50%; }
-  .project--heading {
-    margin-top: 0; }
+  .project__heading {
+    margin: 0; }
+  .project h4 {
+    margin-top: 1rem; }
+  .project__link {
+    margin-right: 30px; }
+    .project__link a:hover {
+      color: pink; }
+    .project__link a:active {
+      color: blue; }
+
+@media only screen and (max-width: 900px) {
+  .image-container {
+    width: 50%;
+    margin: 0 5% 2% 10%;
+    border: 2px solid black; }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 8rem; }
+    .project__text {
+      margin-left: 10%;
+      width: 80%; } }
 
 footer {
   position: relative;
